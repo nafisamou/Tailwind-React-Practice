@@ -28,7 +28,7 @@ const Pricing = () => {
     {
       id: 3,
       name: "Premium",
-      price: (19.99).toExponential,
+      price: 19.99,
       features: [
         "Everything on Premium",
         "Extra Feature",
@@ -39,10 +39,10 @@ const Pricing = () => {
   ];
   return (
     <div>
-      <h1 className="text-5xl font-bold bg-indigo-300 text-white p-12 m-1 ">
+      <h1 className="text-5xl font-bold bg-indigo-300 text-white p-12 m-4 mt-4 mb-6 ">
         Best Deal of the town
       </h1>
-      <div className="grid grid-cols-3 gap-3">
+      <div className="grid md:grid-cols-3 gap-3">
         {pricingOptions.map(option => 
           <PricingOption key={option.id} option={option}></PricingOption>
         )}
